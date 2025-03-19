@@ -47,7 +47,7 @@ header {
 .news {
     font-family: Geologica;
     color: rgb(55, 134, 204);
-    font-size: 28px;
+    font-size: 34px;
 }
 
 
@@ -69,6 +69,7 @@ header {
     font-family: Geologica;
     color: rgb(55, 134, 204);  
     margin-top: 50px;
+    font-size: 34px;
 }
 
 .top {
