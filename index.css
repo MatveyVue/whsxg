@@ -2,9 +2,10 @@ body {
     background-color: white;
     margin: 0;
     -ms-user-select: none; 
- -moz-user-select: none; 
- -webkit-user-select: none; 
- user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+    overflow-x: hidden;
 }
 
 a {
