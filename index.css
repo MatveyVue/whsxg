@@ -104,7 +104,7 @@ footer {
     border: 0.5px solid rgb(222, 222, 222);
 }
 
-@media screen and (min-width: 1px) and (max-width: 779px) {
+@media screen and (min-width: 1px) and (max-width: 525px) {
     .mgn1 {
         text-align: center;
     }
@@ -116,7 +116,25 @@ footer {
     }
 } 
 
-@media screen and (min-width: 780px) and (max-width: 2500px) {
+@media screen and (min-width: 526px) and (max-width: 600px) {
+    .flex2 {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 650px) {
+    .flex2 {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 700px) {
+    .flex2 {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1589px) {
     .flex {
         display: flex;
     }
@@ -149,5 +167,133 @@ footer {
     }
     .hi {
         margin-top: 10px;
+        float: left;
+        margin-left: -80px;
+    }
+    .pepe {
+        float: right;
+    }
+} 
+
+@media screen and (min-width: 1590px) and (max-width: 1680px) {
+    .flex {
+        display: flex;
+    }
+    .mgn2 {
+        width: 75%;
+    }
+    .news1 {
+        margin-left: 10vw;
+    }
+    .news2 {
+        margin-left: 12vw;
+    }
+    .infnew {
+        margin-left: 5px;
+        font-size: 1.5vw;
+    }
+    .infon {
+        margin-left: 5px;
+        font-size: 1.3vw;
+    }
+    .flex2 {
+        display: flex;
+        margin-left: 7%;
+    }
+    .top {
+        font-size: 1.5vw;
+    }
+    .inftop {
+        font-size: 1.3vw;
+    }
+    .hi {
+        margin-top: 10px;
+        float: left;
+        margin-left: -50px;
+    }
+    .pepe {
+        float: right;
+    }
+} 
+
+@media screen and (min-width: 1681px) and (max-width: 2500px) {
+    .flex {
+        display: flex;
+    }
+    .mgn2 {
+        width: 75%;
+    }
+    .news1 {
+        margin-left: 10vw;
+    }
+    .news2 {
+        margin-left: 12vw;
+    }
+    .infnew {
+        margin-left: 5px;
+        font-size: 1.5vw;
+    }
+    .infon {
+        margin-left: 5px;
+        font-size: 1.3vw;
+    }
+    .flex2 {
+        display: flex;
+        margin-left: 7%;
+    }
+    .top {
+        font-size: 1.5vw;
+    }
+    .inftop {
+        font-size: 1.3vw;
+    }
+    .hi {
+        margin-top: 10px;
+        float: left;
+        margin-left: -15px;
+    }
+    .pepe {
+        float: right;
+    }
+} 
+
+@media screen and (min-width: 1900px) and (max-width: 2500px) {
+    .flex {
+        display: flex;
+    }
+    .mgn2 {
+        width: 75%;
+    }
+    .news1 {
+        margin-left: 10vw;
+    }
+    .news2 {
+        margin-left: 12vw;
+    }
+    .infnew {
+        margin-left: 5px;
+        font-size: 1.5vw;
+    }
+    .infon {
+        margin-left: 5px;
+        font-size: 1.3vw;
+    }
+    .flex2 {
+        display: flex;
+        margin-left: 7%;
+    }
+    .top {
+        font-size: 1.5vw;
+    }
+    .inftop {
+        font-size: 1.3vw;
+    }
+    .hi {
+        margin-top: 10px;
+        float: left;
+        margin-left: 60px;
+    }
+    .pepe {
+        float: right;
     }
 } 
