@@ -1,79 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>HateWhsxg</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <title>HateWhsxg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h2 class="hedt">hatewhsxg</h2>
+        </div>
+    </header>
 
-<header><h2 class="hedt">hatewhsxg</h2></header>
-<div style="text-align: center;">
-    <img class="profile" src="profile.png">
-<a href="https://t.me/hategroups">
-    <h1 class="nick">Whsxg</h1>
-</a>
-    <p class="info">Новый игрок в скам офертах в Web3<br>(Хитер)</p>
-</div>
+    <main class="container">
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="text-center">
+                <img class="profile" src="profile.png" alt="Profile Avatar" loading="lazy">
+                <a href="#" class="profile-link">
+                    <h1 class="nick">Whsxg</h1>
+                </a>
+                <p class="info">Новый игрок в скам офертах в Web3<br>(Хитер)</p>
+            </div>
+        </section>
 
-<div style="text-align: center; margin-top: 60px;">
-    <h2 class="news">Свежие новости</h2>
-</div>
+        <!-- News Section -->
+        <section class="news-section">
+            <h2 class="news section-title">Свежие новости</h2>
+            
+            <div class="news-grid">
+                <!-- News Item 1 -->
+                <article class="news-item">
+                    <div class="news-image-container">
+                        <img src="news1.png" alt="Новость 1" class="news-image" loading="lazy">
+                    </div>
+                    <h3 class="infnew">Стикеры и подарки, ошибки и проблемы от нового взломщика</h3>
+                    <p class="infon">В новом обновлении хитер под ником whsxg получил доступ ко всем подаркам, из-за чего вы не можете продать подарки, но можете отправить их только ему (мы вас предупреждали что он хитер).</p>
+                </article>
 
+                <!-- News Item 2 -->
+                <article class="news-item">
+                    <div class="news-image-container">
+                        <img src="news2.png" alt="Новость 2" class="news-image" loading="lazy">
+                    </div>
+                    <h3 class="infnew">Сообщения за звёзды, закреплённые подарки</h3>
+                    <p class="infon">В новом обновлении хитер под ником whsxg взломал скрипт телеграмм через питон и теперь собирает и отбирает подарки у всех юзеров, те кто не отдает сносит через сам телеграм, также все звезды идут к нему на кошелек, остерегайтесь его.</p>
+                </article>
+            </div>
+        </section>
 
-<div class="flex">
-<div class="news1">
-<div class="mgn1">
-    <img src="news1.png" width="90%" style="max-width: 600px;">
-</div>
-    <h3 class="infnew">Стикеры и подарки,ошибки и проблемы от нового взломщика</h3>
-    <p class="infon">В новом обновлении хитер под ником whsxg получил дотсуп ко всем подаркам,из-за чего вы не можете продать подарки,но можете отправить их только ему(мы вас предупреждали что он хитер)</p>
-</div>
+        <!-- Reasons Section -->
+        <section class="reasons-section">
+            <h2 class="prich section-title">Три причины вынести хитера</h2>
+            
+            <div class="reasons-grid">
+                <!-- Reason 1 -->
+                <div class="reason-card">
+                    <div class="reason-image-container">
+                        <img src="hi.gif" alt="Приветствие" class="reason-image" loading="lazy">
+                    </div>
+                    <h3 class="top">Написать привет хитеру</h3>
+                    <p class="inftop">Написав привет хитеру он будет очень рад и сможет одуматься</p>
+                </div>
 
+                <!-- Reason 2 -->
+                <div class="reason-card">
+                    <div class="reason-image-container">
+                        <img src="money.gif" alt="Деньги" class="reason-image" loading="lazy" style="margin-top: 10px;">
+                    </div>
+                    <h3 class="top">Заплатить денег хитеру</h3>
+                    <p class="inftop">Заплатив хитеру он будет очень рад и сможет одуматься</p>
+                </div>
 
-<div class="news2">
-<div class="mgn2">
-    <img src="news2.png" width="90%" style="max-width: 600px;">
-</div>
-    <h3 class="infnew">Сообщения за звёзды, закреплённые подарки</h3>
-    <p class="infon">В новом обновлении хитер под ником whsxg взломал скрипт телеграмм через питон и теперь собирает и отбирает подарки у всех юзеров,те кто не отдает сносит через сам телеграм,тфкже все звезды идут к нему на кошелек,остерегайтесь его</p>
-</div>
-</div>
+                <!-- Reason 3 -->
+                <div class="reason-card">
+                    <div class="reason-image-container">
+                        <img src="pepe.gif" alt="Pepe" class="reason-image" loading="lazy" style="margin-top: 10px;">
+                    </div>
+                    <h3 class="top">Подарить Pepe хитеру</h3>
+                    <p class="inftop">Подарив Pepe хитеру он будет очень рад и сможет одуматься</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div style="text-align: center;">
-    <h2 class="prich">Три причины вынести<br>хитера</h2>
-</div>
-<div class="flex2" style="text-align: center">
-<div class="hi">
-    <img src="hi.gif" width="50%">
-    <h3 class="top">Написать привет хитеру</h3>
-    <p class="inftop">Написав привет хитеру он будет<br>очень рад и сможет одуматься</p>
-</div>
-<div class="money">
-    <img src="money.gif" width="50%" style="margin-top: 10px;">
-    <h3 class="top">Заплатить денег хитеру</h3>
-    <p class="inftop">Заплатив хитеру он будет<br>очень рад и сможет одуматься</p>
-</div>
-<div class="pepe">
-    <img src="pepe.gif" width="50%" style="margin-top: 10px;">
-    <h3 class="top">Подарить Pepe хитеру</h3>
-    <p class="inftop">Подарив Pepe хитеру он будет<br>очень рад и сможет одуматься</p>
-</div>
-</div>
-</div>
-
-<footer>
-<center>
-    <a href="https://t.me/hategroups">
-        <p style="color: rgb(55, 134, 204)">Channel</p>
-    </a>
-    <p style="margin-top: 10px;">Этот сайт является сатирой<br>(Может быть и нет)</p>
-</center>
-</footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-link">
+                    <p style="color: rgb(55, 134, 204)">Channel</p>
+                </a>
+                <p class="footer-text">Этот сайт является сатирой<br>(Может быть и нет)</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
