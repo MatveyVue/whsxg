@@ -1,299 +1,373 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
     margin: 0;
-    -ms-user-select: none; 
-    -moz-user-select: none; 
-    -webkit-user-select: none; 
-    user-select: none; 
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     overflow-x: hidden;
+    font-family: 'Geologica', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    text-decoration: none;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+/* Header */
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 100%;
     height: 70px;
-    border: 0.5px solid rgb(222, 222, 222);
+    border-bottom: 0.5px solid white; /* Белый бордер */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .hedt {
-    font-family: Geologica;
     color: rgb(55, 134, 204);
-    font-size: 22px;
-    margin-top: 25px;
-    margin-left: 10px;
+    font-size: clamp(20px, 5vw, 24px);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .profile {
-    margin-top: 45px;
-    text-align: center;
-    width: 35%;
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid rgb(55, 134, 204);
+}
+
+.profile-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .nick {
-    font-family: Geologica;
-    color: rgb(55, 134, 204); 
+    color: rgb(55, 134, 204);
+    font-size: clamp(28px, 6vw, 36px);
+    font-weight: 700;
+    margin: 10px 0;
 }
 
 .info {
-    font-family: Geologica;
     color: rgb(74, 74, 74);
-    font-size: 18px;
+    font-size: clamp(16px, 3vw, 18px);
+    line-height: 1.5;
 }
 
+/* News Section */
 .news {
-    font-family: Geologica;
     color: rgb(55, 134, 204);
-    font-size: 34px;
+    font-size: clamp(28px, 6vw, 36px);
 }
 
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.news-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+    border: 1px solid white; /* Белый бордер */
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.news-image-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
 
 .infnew {
-    font-family: Geologica;
     color: rgb(55, 134, 204);
-    margin-left: 5vw;
+    font-size: clamp(20px, 4vw, 24px);
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .infon {
-    font-family: Geologica;
     color: rgb(74, 74, 74);
-    font-size: 16px;
-    margin-left: 5vw;
-    margin-top: -5px;
+    font-size: clamp(16px, 3vw, 18px);
+    line-height: 1.6;
 }
 
+/* Reasons Section */
 .prich {
-    font-family: Geologica;
-    color: rgb(55, 134, 204);  
-    margin-top: 50px;
-    font-size: 34px;
+    color: rgb(55, 134, 204);
+    font-size: clamp(28px, 6vw, 36px);
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.reason-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid white; /* Белый бордер */
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reason-image-container {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+}
+
+.reason-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .top {
-    font-family: Geologica;
-    color: rgb(55, 134, 204);  
+    color: rgb(55, 134, 204);
+    font-size: clamp(20px, 4vw, 22px);
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .inftop {
-    font-family: Geologica;
     color: rgb(74, 74, 74);
+    font-size: clamp(16px, 3vw, 18px);
+    line-height: 1.6;
 }
 
-.hi {
-    max-width: 500px;
-}
-
-.pepe {
-    max-width: 500px;
-}
-
-.money {
-    max-width: 500px;
-}
-
+/* Footer */
 footer {
-    width: 100%;
-    height: 100px;
-    margin-top: 80px;
-    font-family: Geologica;
+    background-color: white;
+    border-top: 0.5px solid white; /* Белый бордер */
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-text {
     color: grey;
-    border: 0.5px solid rgb(222, 222, 222);
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
 }
 
-@media screen and (min-width: 1px) and (max-width: 525px) {
-    .mgn1 {
-        text-align: center;
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
     }
-    .mgn2 {
-        text-align: center;
+    
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
-    .news2 {
-        margin-top: 40px;
+    
+    .reasons-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
-} 
-
-@media screen and (min-width: 526px) and (max-width: 600px) {
-    .flex2 {
-        margin-left: 40px;
+    
+    .news-item, .reason-card {
+        padding: 30px;
     }
-}
-
-@media screen and (min-width: 601px) and (max-width: 650px) {
-    .flex2 {
-        margin-left: 60px;
-    }
-}
-
-@media screen and (min-width: 651px) and (max-width: 700px) {
-    .flex2 {
-        margin-left: 70px;
+    
+    .profile {
+        width: 180px;
+        height: 180px;
     }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1589px) {
-    .flex {
-        display: flex;
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 40px;
     }
-    .mgn2 {
-        width: 75%;
+    
+    .news-grid {
+        gap: 40px;
     }
-    .news1 {
-        margin-left: 10vw;
+    
+    .reasons-grid {
+        gap: 40px;
     }
-    .news2 {
-        margin-left: 12vw;
+    
+    .profile {
+        width: 200px;
+        height: 200px;
     }
-    .infnew {
-        margin-left: 5px;
-        font-size: 1.5vw;
+    
+    .news {
+        font-size: 40px;
     }
-    .infon {
-        margin-left: 5px;
-        font-size: 1.3vw;
+    
+    .prich {
+        font-size: 40px;
     }
-    .flex2 {
-        display: flex;
-        margin-left: 7%;
-    }
-    .top {
-        font-size: 1.5vw;
-    }
-    .inftop {
-        font-size: 1.3vw;
-    }
-    .hi {
-        margin-top: 10px;
-        float: left;
-        margin-left: -80px;
-    }
-    .pepe {
-        float: right;
-    }
-} 
+}
 
-@media screen and (min-width: 1590px) and (max-width: 1680px) {
-    .flex {
-        display: flex;
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
     }
-    .mgn2 {
-        width: 75%;
+    
+    .news-grid {
+        gap: 50px;
     }
-    .news1 {
-        margin-left: 10vw;
+    
+    .reasons-grid {
+        gap: 50px;
     }
-    .news2 {
-        margin-left: 12vw;
-    }
-    .infnew {
-        margin-left: 5px;
-        font-size: 1.5vw;
-    }
-    .infon {
-        margin-left: 5px;
-        font-size: 1.3vw;
-    }
-    .flex2 {
-        display: flex;
-        margin-left: 7%;
-    }
-    .top {
-        font-size: 1.5vw;
-    }
-    .inftop {
-        font-size: 1.3vw;
-    }
-    .hi {
-        margin-top: 10px;
-        float: left;
-        margin-left: -50px;
-    }
-    .pepe {
-        float: right;
-    }
-} 
+}
 
-@media screen and (min-width: 1681px) and (max-width: 2500px) {
-    .flex {
-        display: flex;
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+    .profile-section {
+        margin-bottom: 50px;
     }
-    .mgn2 {
-        width: 75%;
+    
+    .news-item, .reason-card {
+        padding: 20px;
     }
-    .news1 {
-        margin-left: 10vw;
+    
+    .news {
+        margin-bottom: 30px;
     }
-    .news2 {
-        margin-left: 12vw;
+    
+    .prich {
+        margin-bottom: 30px;
     }
-    .infnew {
-        margin-left: 5px;
-        font-size: 1.5vw;
-    }
-    .infon {
-        margin-left: 5px;
-        font-size: 1.3vw;
-    }
-    .flex2 {
-        display: flex;
-        margin-left: 7%;
-    }
-    .top {
-        font-size: 1.5vw;
-    }
-    .inftop {
-        font-size: 1.3vw;
-    }
-    .hi {
-        margin-top: 10px;
-        float: left;
-        margin-left: -15px;
-    }
-    .pepe {
-        float: right;
-    }
-} 
+}
 
-@media screen and (min-width: 1900px) and (max-width: 2500px) {
-    .flex {
-        display: flex;
+/* Very small screens */
+@media (max-width: 374px) {
+    .container {
+        padding: 0 15px;
     }
-    .mgn2 {
-        width: 75%;
+    
+    .profile {
+        width: 120px;
+        height: 120px;
     }
-    .news1 {
-        margin-left: 10vw;
+    
+    .nick {
+        font-size: 24px;
     }
-    .news2 {
-        margin-left: 12vw;
+    
+    .info {
+        font-size: 14px;
     }
-    .infnew {
-        margin-left: 5px;
-        font-size: 1.5vw;
+    
+    .news, .prich {
+        font-size: 24px;
     }
-    .infon {
-        margin-left: 5px;
-        font-size: 1.3vw;
+    
+    .infnew, .top {
+        font-size: 18px;
     }
-    .flex2 {
-        display: flex;
-        margin-left: 7%;
+    
+    .infon, .inftop {
+        font-size: 14px;
     }
-    .top {
-        font-size: 1.5vw;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
-    .inftop {
-        font-size: 1.3vw;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
     }
-    .hi {
-        margin-top: 10px;
-        float: left;
-        margin-left: 60px;
+    
+    .profile, .news-image, .reason-image {
+        filter: grayscale(100%);
     }
-    .pepe {
-        float: right;
+    
+    footer {
+        border: none;
     }
-} 
+}
